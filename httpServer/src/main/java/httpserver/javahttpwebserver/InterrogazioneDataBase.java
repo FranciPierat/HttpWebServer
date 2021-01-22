@@ -15,8 +15,8 @@ import java.sql.Statement;
  * @author Francesco
  */
 public class InterrogazioneDataBase {
-    private final String DRIVER="com.mysql.jdbc.Driver";
-    private String url_db="jdbc:mysql://localhost:3306/weberver";
+    private final String DRIVER="com.mysql.cj.jdbc.Driver";
+    private String url_db="jdbc:mysql://localhost:3306/webserver?serverTimezone=Europe/Rome";
     private String query;
     private Connection conn;
     private ResultSet result;
